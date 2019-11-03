@@ -1,9 +1,12 @@
 require "./spec_helper"
 
 describe Rover do
-  # TODO: Write tests
+  
+  it "should run a list of commands" do
+    expected = Rover.new.move([Forward, Left, Forward, Right])
 
-  it "works" do
-    true.should eq(true)
+    expected.orientation.class.should eq(North)
+    expected.position.x.should eq(-1)
+    expected.position.y.should eq(1)
   end
 end
