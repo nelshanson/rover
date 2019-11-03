@@ -22,7 +22,7 @@ macro defined_orientation(name, **args)
     end
 end
 
-defined_orientation(North, x: 0,  y: 1,  left: West)
-defined_orientation(South, x: 0,  y: -1, left: East)
-defined_orientation(East,  x: 1,  y: 0,  left: North)
-defined_orientation(West,  x: -1, y: 0,  left: South)
+defined_orientation(North, x: 0,  y: 1,  left: West, right: East)
+defined_orientation(South, x: 0,  y: -1, left: East, right: West)
+defined_orientation(East,  x: 1,  y: 0,  left: North, right: South)
+defined_orientation(West,  x: -1, y: 0,  left: South, right: North)
