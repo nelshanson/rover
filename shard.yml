@@ -1,0 +1,13 @@
+name: rover
+version: 0.1.0
+
+authors:
+  - Nels Hanson <nelshanson@gmail.com>
+
+targets:
+  rover:
+    main: src/rover.cr
+
+crystal: 0.31.1
+
+license: MIT
