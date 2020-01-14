@@ -1,4 +1,5 @@
 require "./orientation"
+require "./point"
 
 class Rover
   VERSION = "0.1.0"
